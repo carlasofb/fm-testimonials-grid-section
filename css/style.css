@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "BarlowSemiCondensed";
+  src: url(../fonts/BarlowSemiCondensed-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "BarlowSemiCondensed Medium";
+  src: url(../fonts/BarlowSemiCondensed-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "BarlowSemiCondensed SemiBold";
+  src: url(../fonts/BarlowSemiCondensed-SemiBold.ttf) format("truetype");
+}
+body {
+  font-size: 13px;
+  font-family: "BarlowSemiCondensed", Arial, Helvetica, sans-serif;
+}
+
+.testimonials {
+  padding: 60px;
+  background-color: hsl(210, 46%, 95%);
+  display: grid;
+  grid-template: "left-top left-top middle-top right" "left-bottom middle-bottom middle-bottom right";
+  gap: 20px;
+}
+@media (max-width: 375px) {
+  .testimonials {
+    display: block;
+  }
+}
+
+.left-top {
+  grid-area: left-top;
+}
+
+.left-bottom {
+  grid-area: left-bottom;
+}
+
+.middle-top {
+  grid-area: middle-top;
+}
+
+.middle-bottom {
+  grid-area: middle-bottom;
+}
+
+.right {
+  grid-area: right;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+}
+@media (max-width: 375px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+.card h3 {
+  font-size: 18px;
+  font-family: "BarlowSemiCondensed SemiBold", Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+.card .quote {
+  color: hsla(210, 46%, 95%, 0.7);
+}
+.card.bg-white {
+  box-shadow: 1px 1px 5px 0 hsl(0, 0%, 81%);
+}
+
+.bg-violet {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+}
+.bg-violet .quote {
+  color: hsla(263, 55%, 52%, 0.7);
+}
+
+.bg-gray {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.bg-white {
+  background-color: hsl(210, 46%, 95%);
+}
+
+.bg-dark-gray {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.text-light {
+  color: hsl(0, 0%, 81%);
+}
+
+.text-dark {
+  color: hsl(217, 19%, 35%);
+}
+.text-dark .author .author-label {
+  color: hsl(217, 19%, 35%);
+}
+
+.author {
+  display: flex;
+  margin-bottom: 10px;
+}
+.author img {
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 81%);
+  margin-right: 10px;
+}
+.author img.image-violet {
+  border-color: hsla(263, 55%, 52%, 0.7);
+}
+.author .author-info {
+  display: flex;
+  flex-direction: column;
+}
+.author .author-name {
+  font-family: "BarlowSemiCondensed SemiBold", Arial, Helvetica, sans-serif;
+}
+.author .author-label {
+  font-size: 12px;
+  color: hsla(210, 46%, 95%, 0.5);
+}/*# sourceMappingURL=style.css.map */
